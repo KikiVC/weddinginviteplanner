@@ -22,6 +22,7 @@ You will be employer-ready if you can answer the following questions:
 
 While you're going to use form input elements, you will not be submitting data to a remote server. You'll be using the power of JavaScript to do live, on-screen updates. Adding persistence will come in a later iteration
 
+## Cat Tarot Wedding Invite
 
 ![Screenshot](image/preview/weddinginvitescreenshot.png)
 
