@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="/image/favicon/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Wedding Invitation Designer</title>
+    <style>
+        @import url(style.css);
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>CAT TAROT WEDDING INVITES</h1>
+
+        <!--[LEFT SIDE]-->
+        <section class="grid">
+            <div class="design">
+                <br>
+                <h2>Choose Your Design</h2>
+                <nav class="btnGroup">
+                    <button id="bStyle1" class="btnPreview" onclick="changeStyle('style1')"></button>
+                    <button id="bStyle2" class="btnPreview" onclick="changeStyle('style2')"></button>
+                    <button id="bStyle3" class="btnPreview" onclick="changeStyle('style3')"></button>
+                    <button id="bStyle4" class="btnPreview" onclick="changeStyle('style4')"></button>
+                </nav>
+
+                <div class="form">
+                    <h2>Enter Your Details</h2>
+                    <input type="text" placeholder="Host One" id="name" onkeyup="getName()">
+                    <br>
+                    <input type="text" placeholder="Host Two" id="name2" onkeyup="getName2()">
+                    <br>
+                    <input type="date" placeholder="Enter the Date" id="dateVal" onclick="getDate()">
+                    <br>
+                    <input type="text" placeholder="Enter the Time" id="time" onkeyup="getTime()">
+                    <br>
+                    <input type="text" placeholder="Venue & Location" id="venue" onkeyup="getVenue()">
+                </div>
+            </div>
+
+
+            <!--[RIGHT SIDE]-->
+            <div class="invite" id="inviteWindow">
+                <div class="imgtext">
+                    <br>
+                    <span id="input"></span>
+                    <br>
+                    <span>&</span>
+                    <br>
+                    <span id="input2"></span>
+                    <br>
+                    <br>
+                    <span id="input3"></span>
+                    <br>
+                    <br>
+                    <span id="input4"></span>
+                    <span>at</span>
+                    <span id="input5"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+
+<!--[FOOTER]-->
+<footer>
+    <h3> Kim C / Copyright &copy; 2021</h3>
+</footer>
+
+<script src="script.js"></script>
+
+</html>

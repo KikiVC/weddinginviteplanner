@@ -1,0 +1,323 @@
+/*------------------------------------------------------------------
+***
+* MAIN STYLES 
+***
+* These are the main styles
+* for the invite.
+***
+
+***
+* CSS DIRECTORY
+* 1. =FONTS
+* 1. =VARIABLES
+* 2. =WRAPPER
+* 3. =GRID
+* 4. =DESIGN AND INVITE BOXES
+* 5. =HOVER
+* 7. =BUTTON PREVIEWS
+* 8. =LIVETYPE
+* 8. =INVITE STYLES
+* 9. =FOOTER
+***
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[FONTS]
+-------------------------------------------------------------------*/
+
+/* 
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Chelsea Market', cursive;
+font-family: 'Dokdo', cursive;
+font-family: 'Fascinate', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Poller One', cursive;
+font-family: 'Sigmar One', cursive;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Chelsea+Market&family=Dokdo&family=Fascinate&family=Marck+Script&family=Poller+One&family=Sigmar+One&display=swap');
+
+/*------------------------------------------------------------------
+[VARIABLES]
+-------------------------------------------------------------------*/
+
+:root {
+  --text-color: hsl(35, 90%, 96%);
+}
+
+body {
+    background-color: hsla(0, 3%, 7%, 0.858);
+}
+ 
+h1, h2, footer {
+  color: var(--text-color);
+}
+
+
+/*------------------------------------------------------------------
+[WRAPPER]
+-------------------------------------------------------------------*/
+
+.wrapper {
+    width: 100rem;
+    margin: 0 auto;
+    height: 0 auto;
+}
+
+/*------------------------------------------------------------------
+[GRID]
+-------------------------------------------------------------------*/
+
+.grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*------------------------------------------------------------------
+[DESIGN & INVITE BOXES]
+-------------------------------------------------------------------*/
+
+.design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    box-shadow: rgba(3, 8, 20, 0.303) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 70rem;
+    width: auto;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+ }
+
+
+.invite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #353535;
+    box-shadow: rgba(3, 8, 20, 0.303) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height:auto;
+    width:auto;
+    border-radius: 4px;
+    transition: all 500ms;
+    background-image: url(image/main1.svg);
+    background-size: contain;
+    background-size: cover;
+ }
+
+/*------------------------------------------------------------------
+[HOVER]
+-------------------------------------------------------------------*/
+
+.design:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+ }
+
+ .invite:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+ }
+
+/*------------------------------------------------------------------
+[BUTTON PREVIEWS]
+-------------------------------------------------------------------*/
+button:hover, button:focus {
+  outline: none;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.btnPreview {
+  position:center;
+  width: 120px;
+  height: 165px;
+  padding: 20;
+  margin:15px;
+  box-shadow: 5px 2px 5px rgb(0 0 0 / 20%);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transform: scale(1);
+}
+
+.btnPreview:hover {
+  will-change: width,height;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transform:scale(2);
+
+}
+
+.btnPreview:active {
+  width: 67.2px;
+  height: 70px;
+}
+
+#bStyle1{
+  background-image: url(image/aceofcups.svg);
+  background-size: contain;
+  background-size: cover;
+
+}
+
+#bStyle2{
+  background-image: url(image/theloversimg.svg);
+  background-size: contain;
+  background-size: cover;
+}
+
+#bStyle3{
+  background-image: url(image/twoofcups.svg);
+  background-size: contain;
+  background-size: cover;
+}
+
+#bStyle4{
+  background-image: url(image/fourofwandsimg.svg);
+  background-size: contain;
+  background-size: cover;
+}
+
+
+/*------------------------------------------------------------------
+[LIVE TYPE]
+-------------------------------------------------------------------*/
+
+.imgtext {
+    text-align: center;
+    /* margin-top: 20%; */
+    position: relative;
+    margin-top: 65%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+
+
+input {
+    width: 250px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: .5rem;
+}
+
+/*------------------------------------------------------------------
+[INVITE STYLES]
+-------------------------------------------------------------------*/
+
+.style1 {
+  font-family: 'Chelsea Market', cursive;
+  text-align: center;
+  height: 70rem;
+  font-size: 3rem;
+  -webkit-text-fill-color:hsl(0, 0%, 0%);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: hsla(37, 89%, 86%, 0.742);
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.153),
+      rgba(0, 0, 0, 0.153)),
+    url(image/aceofcups.svg);
+  background-size: cover;
+
+
+}
+
+.style2 {
+  font-family: 'Dokdo', cursive;
+  text-align: center;
+  height: 70rem;
+  font-size: 3rem;
+  -webkit-text-fill-color: hsl(14, 51%, 51%);
+  -webkit-text-stroke-width: .7px;
+  -webkit-text-stroke-color: hsl(0, 0%, 0%);
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.153),
+      rgba(0, 0, 0, 0.153)),
+    url(image/theloversimg.svg);
+  background-size: cover;
+
+}
+
+.style3 {
+  font-family: 'Marck Script', cursive;
+  text-align: center;
+  height: 70rem;
+  font-size: 3rem;
+  -webkit-text-fill-color: hsl(42, 75%, 64%);
+  -webkit-text-stroke-width: .6px;
+  -webkit-text-stroke-color: hsl(40, 84%, 87%);
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.153),
+      rgba(0, 0, 0, 0.153)
+    ),
+    url(image/twoofcups.svg);
+  background-size: cover;
+
+}
+
+.style4 {
+/* font-family: 'Fascinate', cursive; */
+  font-family: 'Sigmar One', cursive;
+  text-align: center;
+  height: 70rem;
+  font-size: 2.3rem;
+  -webkit-text-fill-color: hsl(42, 75%, 64%);
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: hsl(0, 0%, 0%);
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.153),
+      rgba(0, 0, 0, 0.153)),
+    url(image/fourofwandsimg.svg);
+  background-size: cover;
+}
+
+/*------------------------------------------------------------------
+[FOOTER]
+-------------------------------------------------------------------*/
+
+footer, h3 {
+    text-align: center;
+    font-size: small;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
