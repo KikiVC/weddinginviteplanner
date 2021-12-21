@@ -24,7 +24,11 @@ While you're going to use form input elements, you will not be submitting data t
 
 ## Cat Tarot Wedding Invite
 
-[Link to Cat Tarot Wedding Invite](https://kc-cat-tarot-invite.surge.sh/)
+[Website Link: Cat Tarot Wedding Invites](https://kc-cat-tarot-invite.surge.sh/ "Cat Tarot Invite")
+
+Image Credits: Thiago Corrêa
+
+***
 
 ![Screenshot](image/preview/weddinginvitescreenshot.png)
 
